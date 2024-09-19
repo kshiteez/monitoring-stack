@@ -12,7 +12,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - /root/monitoring/prom:/etc/prometheus
+      - /root/monitoring-stack/prometheus:/etc/prometheus
       - prometheus-data:/prometheus
     restart: unless-stopped
     command:
